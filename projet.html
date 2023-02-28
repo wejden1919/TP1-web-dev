@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>inscription  </title>
+        
+        <style>
+            body{
+            background-color: blueviolet;
+            }
+            table{
+                border: 15px;
+                width: 800px;
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                background-color: black;
+            }
+            .cl1{
+                width:50% ;
+                height: 50%;
+            }.cl2{
+                width:50% ;
+                height: 50%;
+                color: white;
+            }
+            h1{
+                color: aliceblue
+            }
+            </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th class="cl1"><img src= "C:\Users\ishak\Desktop\tp2\AA.jpg" alt="logo" style="width:100%;height: 100%;;">  </th>
+                <th class="cl2">
+                    <h1> Registration Info</h1>
+                    <form>
+                        <label for="nom"> Name:</label><br>
+                        <input id="nom" placeholder="NAME" type="text"><br><br>
+                        <label for="birthday"> birthday:</label><br>
+                        <input id="birthday" placeholder="birthday" type="date"><br><br>
+                        <label for="gender"> gender:</label><br><br>
+                        <input type="radio" id="women" name="gender" value="women">
+                        <label for="gender"> Women</label><br>
+                        <input type="radio" id="Men" name="gender" value="Men">
+                        <label for="gender"> Men</label><br><br>
+                        <label for="email"> Email:</label><br>
+                        <input id="email" placeholder="Email" type="email"><br><br>
+                        <label for="phone"> Phone:</label><br>
+                        <input id="phone" placeholder="Phone" type="text"><br><br>
+                        <input type="submit" value="submit">
+                    </form>
+                     </th>
+            </tr>
+        </table>
+        <script>
+            alert("good afternoon")
+            console.log("text a afficher");
+            confirm("vouler vous vraiment quitter" );
+            if (true) {
+                var z=2020;
+            }
+            console.log(z);
+            if(true){
+                var y='hello';
+            }
+            console.log(y);
+            for(var compteur = 0;compteur<5;compteur++){
+                console.log("compteur=" +compteur);
+            }
+            var arr1=[5];
+            var arr2= Array(5);
+            var arr3= Array(5);
+            var arr4= Array.of(5);
+            console.log(arr1);
+            console.log(arr2);
+            console.log(arr3);
+            console.log(arr4);
+            var arr=[];
+            arr[0]="un";
+            arr[1]=2;
+            arr[2]=3.14;
+            
+            console.log(arr);
+            console.log(arr[0]);
+            console.log(arr["length"]);
+            arr.length=0;
+            console.log(arr);
+            arr.length=3;
+            console.log(arr);
+
+            var arr=[];
+            arr[0]="un";
+            arr[1]=2;
+            arr[2]=3.14;
+            for (var i=0; i<arr.length;i++){
+                console.log(arr[i]);
+            }
+            arr.forEach(Function(nb){
+                console.log('nb: ' +nb);
+            });
+            arr.forEach(nb=>console.log('nb: ' +nb));
+        </script>
+    </body>
+</html>
